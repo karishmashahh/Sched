@@ -1,0 +1,204 @@
+
+* {
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background:black;
+  }
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #000000;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+   
+  }
+  
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid  rgb(8, 9, 104);
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+    font-size: medium;
+    
+  }
+  
+  .todo-input::placeholder {
+    color: #e2e2e2;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(8, 9, 104) 0%,
+      rgb(124, 167, 231) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  .todo-input.edit {
+    border: 2px solid #149fff;
+  }
+  
+  .todo-button.edit {
+    background: linear-gradient(
+      90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: white;
+    background: linear-gradient(
+      90deg,
+      rgb(10, 12, 126) 0%,
+      rgb(131, 176, 243) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+    font-size: large;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    color: black;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.6));
+  }
+  
+  .edit-icon {
+    margin-right: 5px;
+    color: black;
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.6));
+  }
+  .para{
+    color:white;
+    font-size: large;
+  
+  }
+  label{
+    color:white;
+    display:flex;
+   flex-direction: column;
+   padding: 10px;
+   font-size: larger;
+  }
+  .sign{
+    flex-direction: column;
+  }
+  .buttonn{
+    padding: 10px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(8, 9, 104) 0%,
+      rgb(124, 167, 231) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+    margin: 30px;
+    width: 100px;
+    font-size: large;
+  }
+  .inputt{
+    margin:10px;
+    width: 300px;
+    height: 30px;
+    font-size: large;
+  }
+  a{
+    color:rgb(100, 152, 230) ;
+     font-weight: bolder;
+  }
+
+  a:hover{
+    color:rgb(182, 138, 219) ;
+  }
+
+  .headingg{
+  font-size:xx-large;
+  padding-bottom: 50px;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left,  rgb(8, 9, 104) 0%,
+  rgb(124, 167, 231) 100%);
+  align-self: center;
+  height: 50px;
+  }
+  .error {
+    color: #e43f3f;
+   display: inline-block;
+   align-items: center;
+   font-size: 18px;
+   font-weight: bold;
+   visibility: hidden;
+  }
+  .added{
+  color:rgb(100, 152, 230);
+   display: inline-block;
+   align-items: center;
+   font-size: 18px;
+   margin-right: 10px;
+  margin-top: 10px;
+  visibility: hidden;
+ 
+  }
